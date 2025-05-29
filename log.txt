@@ -1,0 +1,23 @@
+commit a4b8d599fc37e36d0c6ffea55de5fc0eb1adbf4a
+Author: krishna-kumari11 <kk1965621@gmail.com>
+Date:   Wed May 28 17:50:03 2025 +0000
+
+    Add frontend views and templates
+
+commit 21dd0f902abff48d986d44e959010483fa15018e
+Author: krishna-kumari11 <kk1965621@gmail.com>
+Date:   Wed May 28 17:47:34 2025 +0000
+
+    Initial project setup with README and .gitignore
+
+commit 7e16e37e887bda29a691b044d478bfad5be21307
+Author: krishna-kumari11 <kk1965621@gmail.com>
+Date:   Wed May 28 17:23:14 2025 +0000
+
+    Initial project setup with frontend
+
+commit 091f663b2ce53f022bf67a88ebdcd66a891b1c0f
+Author: krishna kumari <42892708-kk1965621@users.noreply.replit.com>
+Date:   Tue May 27 16:46:18 2025 +0000
+
+    Initial commit
