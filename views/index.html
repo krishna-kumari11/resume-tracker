@@ -57,29 +57,6 @@
       </tbody>
     </table>
 
-    <script>
-      const form = document.getElementById("resumeForm");
-      const tableBody = document.querySelector("#resumeTable tbody");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const jobTitle = document.getElementById("jobTitle").value;
-        const companyName = document.getElementById("companyName").value;
-        const status = document.getElementById("status").value;
-        const notes = document.getElementById("notes").value;
-
-        const newRow = document.createElement("tr");
-        newRow.innerHTML = `
-        <td>${jobTitle}</td>
-        <td>${companyName}</td>
-        <td>${status}</td>
-        <td>${notes}</td>
-      `;
-        tableBody.appendChild(newRow);
-
-        form.reset();
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
