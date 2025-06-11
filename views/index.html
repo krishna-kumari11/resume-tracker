@@ -1,60 +1,55 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Resume Tracker</title>
-    <!-- Bootstrap CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <title>Resume Tracker (Frontend Only)</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      input,
+      select {
+        margin: 5px;
+        padding: 5px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+      }
+    </style>
   </head>
-  <body class="p-4">
-    <h1 class="mb-4">Resume Tracker</h1>
+  <body>
+    <h2>Resume Tracker (Frontend Only)</h2>
 
-    <!-- Form -->
-    <form id="resumeForm" class="mb-4">
-      <div class="mb-3">
-        <label for="jobTitle" class="form-label">Job Title</label>
-        <input type="text" id="jobTitle" class="form-control" required />
-      </div>
-
-      <div class="mb-3">
-        <label for="companyName" class="form-label">Company Name</label>
-        <input type="text" id="companyName" class="form-control" required />
-      </div>
-
-      <div class="mb-3">
-        <label for="status" class="form-label">Status</label>
-        <select id="status" class="form-select" required>
-          <option value="">Select status</option>
-          <option>Applied</option>
-          <option>Interview</option>
-          <option>Offer</option>
-          <option>Rejected</option>
-        </select>
-      </div>
-
-      <div class="mb-3">
-        <label for="notes" class="form-label">Notes</label>
-        <textarea id="notes" class="form-control" rows="2"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary">Submit</button>
+    <form id="resumeForm">
+      <input type="text" id="company" placeholder="Company" required />
+      <input type="text" id="role" placeholder="Role" required />
+      <input type="text" id="location" placeholder="Location" required />
+      <select id="status">
+        <option value="Pending">Pending</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+      </select>
+      <button type="submit">Submit</button>
     </form>
 
-    <!-- Table -->
-    <table class="table table-bordered" id="resumeTable">
+    <h3>Resumes</h3>
+    <table>
       <thead>
         <tr>
-          <th>Job Title</th>
-          <th>Company Name</th>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Location</th>
           <th>Status</th>
-          <th>Notes</th>
         </tr>
       </thead>
-      <tbody>
-        <!-- Entries will appear here -->
-      </tbody>
+      <tbody id="resumeTableBody"></tbody>
     </table>
 
     <script src="script.js"></script>
